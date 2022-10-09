@@ -6,7 +6,7 @@ bycrypt =Bcrypt(app)
 
 @app.route('/')
 def inicio():
-    session['login']==False
+    session['login']=False
     return render_template("inicio.html")
 
 @app.route('/bienvenido/<int:id>')
